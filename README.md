@@ -30,7 +30,7 @@ Please follow the below instructions to run this project in your machine:
    ```sh
    npm start
    ```
-5. The server should start on in http://localhost:3000
+5. The server should start on in http://localhost:4000
 
 You must configure the client socket also. To do that:
 
@@ -46,7 +46,7 @@ You must configure the client socket also. To do that:
         static SocketClient? _instance;
 
         SocketClient._internal() {
-            socket = IO.io("http://your router ip:3000", <String, dynamic>{
+            socket = IO.io("http://your router ip:4000", <String, dynamic>{
             "transports": ["websocket"],
             "autoConnect": false,
             });
